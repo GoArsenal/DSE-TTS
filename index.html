@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <head>
     <meta charset="utf-8">
     <title>Audio Samples</title>
@@ -566,3 +567,481 @@
   </div>
   
 </body>
+=======
+<head>
+    <meta charset="utf-8">
+    <title>Audio Samples</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="./bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+    </style>
+</head>
+
+<!--<link href="./audio/dist/css/bootstrap.min.css" rel="stylesheet">-->
+<body>
+  <div class="container">
+    <div class="jumbotron mt-3">
+      <h2>Dual Speaker Embedding for Stable and Natural Multilingual Text-to-Speech</h2>
+<!--      <a class="btn btn-lg btn-primary" href="../components/navbar/" role="button">View navbar docs »</a>-->
+    </div>
+	
+	<h6>This page is the demo of audio samples for our paper.</h6>
+
+	<h3>Contents</h3>
+	<ul>
+	  <li><a href="#sec1">Part I: Intra-lingual Synthesis</a>
+		<ul>
+		  <li><a href="#subsec1">1. English</a></li>
+		  <li><a href="#subsec2">2. Mandarin</a></li>
+		  <li><a href="#subsec3">3. German</a></li>
+		  <li><a href="#subsec4">4. Spanish</a></li>
+		</ul>
+	  </li>
+	  <li><a href="#sec2">Part II: Cross-lingual Synthesis</a>
+		<ul>
+		  <li><a href="#subsec5">1. German in English speaker</a></li>
+		  <li><a href="#subsec6">2. German in Mandarin speaker</a></li>
+		  <li><a href="#subsec7">3. Spanish in English speaker</a></li>
+		  <li><a href="#subsec8">4. Spanish in Mandarin speaker</a></li>
+		</ul>
+	  </li>
+	</ul>	
+
+    <a id="sec1"></a>
+	<h3>Part I: Intra-lingual Synthesis</h3>
+	<table class="table">
+			<a id="subsec1"></a>
+			<h5>English female speaker: 100</h5>
+			<tr><td scope="col" colspan="3"><strong>Text: </strong>"But what became of the magic collar?" asked Dorothy, who had listened with breathless interest to the rabbit's story.</th></tr>
+			<tr>
+				<td align="center">Reference recording</td>
+				<td align="center">SANE-TTS</td>
+				<td align="center"><strong>Proposed</strong></td>
+			</tr>
+			<tr>
+				<td><audio src="audio/intra/ref/100.wav" controls=""></audio></td>
+				<td><audio src="audio/intra/en/sane/001.wav" controls=""></audio></td>
+				<td><audio src="audio/intra/en/prop/001.wav" controls=""></audio></td>
+			</tr>
+			<tr><td scope="col" colspan="3"><strong>Text: </strong>"I thank you for the proposal, mr Rivers, and I accept it with all my heart."</th></tr>
+			<tr>
+				<td align="center">Reference recording</td>
+				<td align="center">SANE-TTS</td>
+				<td align="center"><strong>Proposed</strong></td>
+			</tr>
+			<tr>
+				<td><audio src="audio/intra/ref/100.wav" controls=""></audio></td>
+				<td><audio src="audio/intra/en/sane/002.wav" controls=""></audio></td>
+				<td><audio src="audio/intra/en/prop/002.wav" controls=""></audio></td>
+			</tr>
+	</table>
+	<table class="table">
+			<h5>English male speaker: 1027</h5>
+			<tr><td scope="col" colspan="3"><strong>Text: </strong>He would make it practically impossible for Bobby to refuse his hospitality.</th></tr>
+			<tr>
+				<td align="center">Reference recording</td>
+				<td align="center">SANE-TTS</td>
+				<td align="center"><strong>Proposed</strong></td>
+			</tr>
+			<tr>
+				<td><audio src="audio/intra/ref/1027.wav" controls=""></audio></td>
+				<td><audio src="audio/intra/en/sane/011.wav" controls=""></audio></td>
+				<td><audio src="audio/intra/en/prop/011.wav" controls=""></audio></td>
+			</tr>
+			<tr><td scope="col" colspan="3"><strong>Text: </strong>You were excited and imaginative when you went to the old room to take the evidence.</th></tr>
+				<tr>
+					<td align="center">Reference recording</td>
+					<td align="center">SANE-TTS</td>
+					<td align="center"><strong>Proposed</strong></td>
+				</tr>
+				<tr>
+					<td><audio src="audio/intra/ref/1027.wav" controls=""></audio></td>
+					<td><audio src="audio/intra/en/sane/013.wav" controls=""></audio></td>
+					<td><audio src="audio/intra/en/prop/013.wav" controls=""></audio></td>
+				</tr>
+	</table>
+	<table class="table">
+		<a id="subsec2"></a>
+		<h5>Mandarin female speaker: SSB0033</h5>
+		<tr><td scope="col" colspan="3"><strong>Text: </strong>一切尽在姐掌握中</th></tr>
+		<tr>
+			<td align="center">Reference recording</td>
+			<td align="center">SANE-TTS</td>
+			<td align="center"><strong>Proposed</strong></td>
+		</tr>
+		<tr>
+			<td><audio src="audio/intra/ref/SSB0033.wav" controls=""></audio></td>
+			<td><audio src="audio/intra/zh/sane/013.wav" controls=""></audio></td>
+			<td><audio src="audio/intra/zh/prop/013.wav" controls=""></audio></td>
+		</tr>
+		<tr><td scope="col" colspan="3"><strong>Text: </strong>此地的国王是一个驼背小老头</th></tr>
+			<tr>
+				<td align="center">Reference recording</td>
+				<td align="center">SANE-TTS</td>
+				<td align="center"><strong>Proposed</strong></td>
+			</tr>
+			<tr>
+				<td><audio src="audio/intra/ref/SSB0033.wav" controls=""></audio></td>
+				<td><audio src="audio/intra/zh/sane/018.wav" controls=""></audio></td>
+				<td><audio src="audio/intra/zh/prop/018.wav" controls=""></audio></td>
+			</tr>
+</table>
+<table class="table">
+	<h5>Mandarin male speaker: SSB0073</h5>
+	<tr><td scope="col" colspan="3"><strong>Text: </strong>这是完全分割的两个项目</th></tr>
+	<tr>
+		<td align="center">Reference recording</td>
+		<td align="center">SANE-TTS</td>
+		<td align="center"><strong>Proposed</strong></td>
+	</tr>
+	<tr>
+		<td><audio src="audio/intra/ref/SSB0073.wav" controls=""></audio></td>
+		<td><audio src="audio/intra/zh/sane/002.wav" controls=""></audio></td>
+		<td><audio src="audio/intra/zh/prop/002.wav" controls=""></audio></td>
+	</tr>
+	<tr><td scope="col" colspan="3"><strong>Text: </strong>目前孙河板块儿的竞争已经很明显</th></tr>
+		<tr>
+			<td align="center">Reference recording</td>
+			<td align="center">SANE-TTS</td>
+			<td align="center"><strong>Proposed</strong></td>
+		</tr>
+		<tr>
+			<td><audio src="audio/intra/ref/SSB0073.wav" controls=""></audio></td>
+			<td><audio src="audio/intra/zh/sane/003.wav" controls=""></audio></td>
+			<td><audio src="audio/intra/zh/prop/003.wav" controls=""></audio></td>
+		</tr>
+</table>
+<table class="table">
+	<a id="subsec3"></a>
+	<h5>German female speaker: eva</h5>
+	<tr><td scope="col" colspan="3"><strong>Text: </strong>Die Sorge um einen lieben Menschen</th></tr>
+	<tr>
+		<td align="center">Reference recording</td>
+		<td align="center">SANE-TTS</td>
+		<td align="center"><strong>Proposed</strong></td>
+	</tr>
+	<tr>
+		<td><audio src="audio/intra/ref/eva.wav" controls=""></audio></td>
+		<td><audio src="audio/intra/de/sane/001.wav" controls=""></audio></td>
+		<td><audio src="audio/intra/de/prop/001.wav" controls=""></audio></td>
+	</tr>
+	<tr><td scope="col" colspan="3"><strong>Text: </strong>Und wir werden bei allem, was wir tun, nicht alte Fehler wiederholen und Wirtschaft und Umwelt gegeneinander ausspielen.</th></tr>
+		<tr>
+			<td align="center">Reference recording</td>
+			<td align="center">SANE-TTS</td>
+			<td align="center"><strong>Proposed</strong></td>
+		</tr>
+		<tr>
+			<td><audio src="audio/intra/ref/eva.wav" controls=""></audio></td>
+			<td><audio src="audio/intra/de/sane/004.wav" controls=""></audio></td>
+			<td><audio src="audio/intra/de/prop/004.wav" controls=""></audio></td>
+		</tr>
+</table>
+<table class="table">
+	<h5>German male speaker: karlsson</h5>
+	<tr><td scope="col" colspan="3"><strong>Text: </strong>Viele junge Leute mögen in diesem Jahr mehr Chancen in der Mathematik sehen, als sie es vorher getan haben.</th></tr>
+	<tr>
+		<td align="center">Reference recording</td>
+		<td align="center">SANE-TTS</td>
+		<td align="center"><strong>Proposed</strong></td>
+	</tr>
+	<tr>
+		<td><audio src="audio/intra/ref/karlsson.wav" controls=""></audio></td>
+		<td><audio src="audio/intra/de/sane/007.wav" controls=""></audio></td>
+		<td><audio src="audio/intra/de/prop/007.wav" controls=""></audio></td>
+	</tr>
+	<tr><td scope="col" colspan="3"><strong>Text: </strong>Die Bundesregierung handelt dabei natürlich auch.</th></tr>
+		<tr>
+			<td align="center">Reference recording</td>
+			<td align="center">SANE-TTS</td>
+			<td align="center"><strong>Proposed</strong></td>
+		</tr>
+		<tr>
+			<td><audio src="audio/intra/ref/karlsson.wav" controls=""></audio></td>
+			<td><audio src="audio/intra/de/sane/008.wav" controls=""></audio></td>
+			<td><audio src="audio/intra/de/prop/008.wav" controls=""></audio></td>
+		</tr>
+</table>
+<table class="table">
+	<a id="subsec4"></a>
+	<h5>Spanish female speaker: karen</h5>
+	<tr><td scope="col" colspan="3"><strong>Text: </strong>Y lo será; sí, señores, lo será.</th></tr>
+	<tr>
+		<td align="center">Reference recording</td>
+		<td align="center">SANE-TTS</td>
+		<td align="center"><strong>Proposed</strong></td>
+	</tr>
+	<tr>
+		<td><audio src="audio/intra/ref/karen.wav" controls=""></audio></td>
+		<td><audio src="audio/intra/es/sane/001.wav" controls=""></audio></td>
+		<td><audio src="audio/intra/es/prop/001.wav" controls=""></audio></td>
+	</tr>
+	<tr><td scope="col" colspan="3"><strong>Text: </strong>¡Silencio!exclamó, levantándose y subiéndose a la frente las antiparras.</th></tr>
+		<tr>
+			<td align="center">Reference recording</td>
+			<td align="center">SANE-TTS</td>
+			<td align="center"><strong>Proposed</strong></td>
+		</tr>
+		<tr>
+			<td><audio src="audio/intra/ref/karen.wav" controls=""></audio></td>
+			<td><audio src="audio/intra/es/sane/005.wav" controls=""></audio></td>
+			<td><audio src="audio/intra/es/prop/005.wav" controls=""></audio></td>
+		</tr>
+</table>
+<table class="table">
+	<h5>Spanish male speaker: tux</h5>
+	<tr><td scope="col" colspan="3"><strong>Text: </strong>aun entre los obreros y gente del campo, charros muy galanos, llamaban a los petimetres de Villaverde los charritos de barro.
+		Seguí adelante, y seguí dulcemente impresionado.</th></tr>
+	<tr>
+		<td align="center">Reference recording</td>
+		<td align="center">SANE-TTS</td>
+		<td align="center"><strong>Proposed</strong></td>
+	</tr>
+	<tr>
+		<td><audio src="audio/intra/ref/tux.wav" controls=""></audio></td>
+		<td><audio src="audio/intra/es/sane/011.wav" controls=""></audio></td>
+		<td><audio src="audio/intra/es/prop/011.wav" controls=""></audio></td>
+	</tr>
+	<tr><td scope="col" colspan="3"><strong>Text: </strong>El sacerdote que la tomó bajo su protección la puso allí</th></tr>
+		<tr>
+			<td align="center">Reference recording</td>
+			<td align="center">SANE-TTS</td>
+			<td align="center"><strong>Proposed</strong></td>
+		</tr>
+		<tr>
+			<td><audio src="audio/intra/ref/tux.wav" controls=""></audio></td>
+			<td><audio src="audio/intra/es/sane/013.wav" controls=""></audio></td>
+			<td><audio src="audio/intra/es/prop/013.wav" controls=""></audio></td>
+		</tr>
+</table>
+
+	<a id="sec2"></a>
+    <h3>Part II: Cross-lingual Synthesis</h3>
+	<table class="table">
+		<a id="subsec5"></a>
+		<h5>German in English female speaker</h5>
+		<tr><td scope="col" colspan="3"><strong>Text: </strong>Die Sorge um einen lieben Menschen</th></tr>
+		<tr>
+			<td align="center">Reference recording</td>
+			<td align="center">SANE-TTS</td>
+			<td align="center"><strong>Proposed</strong></td>
+		</tr>
+		<tr>
+			<td><audio src="audio/intra/ref/100.wav" controls=""></audio></td>
+			<td><audio src="audio/cross/de/en/sane/female/001.wav" controls=""></audio></td>
+			<td><audio src="audio/cross/de/en/prop/female/001.wav" controls=""></audio></td>
+		</tr>
+		<tr><td scope="col" colspan="3"><strong>Text: </strong>Und wir werden bei allem, was wir tun, nicht alte Fehler wiederholen und Wirtschaft und Umwelt gegeneinander ausspielen.</th></tr>
+			<tr>
+				<td align="center">Reference recording</td>
+				<td align="center">SANE-TTS</td>
+				<td align="center"><strong>Proposed</strong></td>
+			</tr>
+			<tr>
+				<td><audio src="audio/intra/ref/100.wav" controls=""></audio></td>
+				<td><audio src="audio/cross/de/en/sane/female/003.wav" controls=""></audio></td>
+				<td><audio src="audio/cross/de/en/prop/female/003.wav" controls=""></audio></td>
+			</tr>
+	</table>
+	<table class="table">
+		<h5>German in English male speaker</h5>
+		<tr><td scope="col" colspan="3"><strong>Text: </strong>Viele junge Leute mögen in diesem Jahr mehr Chancen in der Mathematik sehen, als sie es vorher getan haben.</th></tr>
+		<tr>
+			<td align="center">Reference recording</td>
+			<td align="center">SANE-TTS</td>
+			<td align="center"><strong>Proposed</strong></td>
+		</tr>
+		<tr>
+			<td><audio src="audio/intra/ref/1027.wav" controls=""></audio></td>
+			<td><audio src="audio/cross/de/en/sane/male/007.wav" controls=""></audio></td>
+			<td><audio src="audio/cross/de/en/prop/male/007.wav" controls=""></audio></td>
+		</tr>
+		<tr><td scope="col" colspan="3"><strong>Text: </strong>Die Bundesregierung handelt dabei natürlich auch.</th></tr>
+			<tr>
+				<td align="center">Reference recording</td>
+				<td align="center">SANE-TTS</td>
+				<td align="center"><strong>Proposed</strong></td>
+			</tr>
+			<tr>
+				<td><audio src="audio/intra/ref/1027.wav" controls=""></audio></td>
+				<td><audio src="audio/cross/de/en/sane/male/008.wav" controls=""></audio></td>
+				<td><audio src="audio/cross/de/en/prop/male/008.wav" controls=""></audio></td>
+			</tr>
+	</table>
+	<table class="table">
+		<a id="subsec6"></a>
+		<h5>German in Mandarin female speaker</h5>
+		<tr><td scope="col" colspan="3"><strong>Text: </strong>Die Sorge um einen lieben Menschen</th></tr>
+		<tr>
+			<td align="center">Reference recording</td>
+			<td align="center">SANE-TTS</td>
+			<td align="center"><strong>Proposed</strong></td>
+		</tr>
+		<tr>
+			<td><audio src="audio/intra/ref/SSB0033.wav" controls=""></audio></td>
+			<td><audio src="audio/cross/de/zh/sane/female/001.wav" controls=""></audio></td>
+			<td><audio src="audio/cross/de/zh/prop/female/001.wav" controls=""></audio></td>
+		</tr>
+		<tr><td scope="col" colspan="3"><strong>Text: </strong>Und wir werden bei allem, was wir tun, nicht alte Fehler wiederholen und Wirtschaft und Umwelt gegeneinander ausspielen.</th></tr>
+			<tr>
+				<td align="center">Reference recording</td>
+				<td align="center">SANE-TTS</td>
+				<td align="center"><strong>Proposed</strong></td>
+			</tr>
+			<tr>
+				<td><audio src="audio/intra/ref/SSB0033.wav" controls=""></audio></td>
+				<td><audio src="audio/cross/de/zh/sane/female/003.wav" controls=""></audio></td>
+				<td><audio src="audio/cross/de/zh/prop/female/003.wav" controls=""></audio></td>
+			</tr>
+	</table>
+	<table class="table">
+		<h5>German in Mandarin male speaker</h5>
+		<tr><td scope="col" colspan="3"><strong>Text: </strong>Viele junge Leute mögen in diesem Jahr mehr Chancen in der Mathematik sehen, als sie es vorher getan haben.</th></tr>
+		<tr>
+			<td align="center">Reference recording</td>
+			<td align="center">SANE-TTS</td>
+			<td align="center"><strong>Proposed</strong></td>
+		</tr>
+		<tr>
+			<td><audio src="audio/intra/ref/SSB0073.wav" controls=""></audio></td>
+			<td><audio src="audio/cross/de/zh/sane/male/007.wav" controls=""></audio></td>
+			<td><audio src="audio/cross/de/zh/prop/male/007.wav" controls=""></audio></td>
+		</tr>
+		<tr><td scope="col" colspan="3"><strong>Text: </strong>Die Bundesregierung handelt dabei natürlich auch.</th></tr>
+			<tr>
+				<td align="center">Reference recording</td>
+				<td align="center">SANE-TTS</td>
+				<td align="center"><strong>Proposed</strong></td>
+			</tr>
+			<tr>
+				<td><audio src="audio/intra/ref/SSB0073.wav" controls=""></audio></td>
+				<td><audio src="audio/cross/de/zh/sane/male/008.wav" controls=""></audio></td>
+				<td><audio src="audio/cross/de/zh/prop/male/008.wav" controls=""></audio></td>
+			</tr>
+	</table>
+	<table class="table">
+		<a id="subsec7"></a>
+		<h5>Spanish in English female speaker(100)</h5>
+		<tr><td scope="col" colspan="3"><strong>Text: </strong>Y lo será; sí, señores, lo será.</th></tr>
+		<tr>
+			<td align="center">Reference recording</td>
+			<td align="center">SANE-TTS</td>
+			<td align="center"><strong>Proposed</strong></td>
+		</tr>
+		<tr>
+			<td><audio src="audio/intra/ref/100.wav" controls=""></audio></td>
+			<td><audio src="audio/cross/es/en/sane/female/001.wav" controls=""></audio></td>
+			<td><audio src="audio/cross/es/en/prop/female/001.wav" controls=""></audio></td>
+		</tr>
+		<tr><td scope="col" colspan="3"><strong>Text: </strong>¡Silencio!exclamó, levantándose y subiéndose a la frente las antiparras.</th></tr>
+			<tr>
+				<td align="center">Reference recording</td>
+				<td align="center">SANE-TTS</td>
+				<td align="center"><strong>Proposed</strong></td>
+			</tr>
+			<tr>
+				<td><audio src="audio/intra/ref/100.wav" controls=""></audio></td>
+				<td><audio src="audio/cross/es/en/sane/female/005.wav" controls=""></audio></td>
+				<td><audio src="audio/cross/es/en/prop/female/005.wav" controls=""></audio></td>
+			</tr>
+	</table>
+	<table class="table">
+		<h5>Spanish in English male speaker(1027)</h5>
+		<tr><td scope="col" colspan="3"><strong>Text: </strong>aun entre los obreros y gente del campo, charros muy galanos, llamaban a los petimetres de Villaverde los charritos de barro.
+			Seguí adelante, y seguí dulcemente impresionado.</th></tr>
+		<tr>
+			<td align="center">Reference recording</td>
+			<td align="center">SANE-TTS</td>
+			<td align="center"><strong>Proposed</strong></td>
+		</tr>
+		<tr>
+			<td><audio src="audio/intra/ref/1027.wav" controls=""></audio></td>
+			<td><audio src="audio/cross/es/en/sane/male/011.wav" controls=""></audio></td>
+			<td><audio src="audio/cross/es/en/prop/male/011.wav" controls=""></audio></td>
+		</tr>
+		<tr><td scope="col" colspan="3"><strong>Text: </strong>El sacerdote que la tomó bajo su protección la puso allí</th></tr>
+			<tr>
+				<td align="center">Reference recording</td>
+				<td align="center">SANE-TTS</td>
+				<td align="center"><strong>Proposed</strong></td>
+			</tr>
+			<tr>
+				<td><audio src="audio/intra/ref/1027.wav" controls=""></audio></td>
+				<td><audio src="audio/cross/es/en/sane/male/013.wav" controls=""></audio></td>
+				<td><audio src="audio/cross/es/en/prop/male/013.wav" controls=""></audio></td>
+			</tr>
+	</table>
+	<table class="table">
+		<a id="subsec8"></a>
+		<h5>Spanish in Mandarin female speaker(SSB0033)</h5>
+		<tr><td scope="col" colspan="3"><strong>Text: </strong>Y lo será; sí, señores, lo será.</th></tr>
+		<tr>
+			<td align="center">Reference recording</td>
+			<td align="center">SANE-TTS</td>
+			<td align="center"><strong>Proposed</strong></td>
+		</tr>
+		<tr>
+			<td><audio src="audio/intra/ref/SSB0033.wav" controls=""></audio></td>
+			<td><audio src="audio/cross/es/zh/sane/female/001.wav" controls=""></audio></td>
+			<td><audio src="audio/cross/es/zh/prop/female/001.wav" controls=""></audio></td>
+		</tr>
+		<tr><td scope="col" colspan="3"><strong>Text: </strong>¡Silencio!exclamó, levantándose y subiéndose a la frente las antiparras.</th></tr>
+			<tr>
+				<td align="center">Reference recording</td>
+				<td align="center">SANE-TTS</td>
+				<td align="center"><strong>Proposed</strong></td>
+			</tr>
+			<tr>
+				<td><audio src="audio/intra/ref/SSB0033.wav" controls=""></audio></td>
+				<td><audio src="audio/cross/es/zh/sane/female/005.wav" controls=""></audio></td>
+				<td><audio src="audio/cross/es/zh/prop/female/005.wav" controls=""></audio></td>
+			</tr>
+	</table>
+	<table class="table">
+		<h5>Spanish in Mandarin male speaker(SSB0073)</h5>
+		<tr><td scope="col" colspan="3"><strong>Text: </strong>aun entre los obreros y gente del campo, charros muy galanos, llamaban a los petimetres de Villaverde los charritos de barro.
+			Seguí adelante, y seguí dulcemente impresionado.</th></tr>
+		<tr>
+			<td align="center">Reference recording</td>
+			<td align="center">SANE-TTS</td>
+			<td align="center"><strong>Proposed</strong></td>
+		</tr>
+		<tr>
+			<td><audio src="audio/intra/ref/SSB0073.wav" controls=""></audio></td>
+			<td><audio src="audio/cross/es/zh/sane/male/011.wav" controls=""></audio></td>
+			<td><audio src="audio/cross/es/zh/prop/male/011.wav" controls=""></audio></td>
+		</tr>
+		<tr><td scope="col" colspan="3"><strong>Text: </strong>El sacerdote que la tomó bajo su protección la puso allí</th></tr>
+			<tr>
+				<td align="center">Reference recording</td>
+				<td align="center">SANE-TTS</td>
+				<td align="center"><strong>Proposed</strong></td>
+			</tr>
+			<tr>
+				<td><audio src="audio/intra/ref/SSB0073.wav" controls=""></audio></td>
+				<td><audio src="audio/cross/es/zh/sane/male/013.wav" controls=""></audio></td>
+				<td><audio src="audio/cross/es/zh/prop/male/013.wav" controls=""></audio></td>
+			</tr>
+	</table>
+
+
+  </div>
+  
+</body>
+>>>>>>> 141a658bb2249cae9b0ad3c4aa97acced837cf14
